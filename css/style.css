@@ -1,0 +1,316 @@
+@import url("https://use.typekit.net/msl8jct.css");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* index*/
+
+header{
+    margin-top: 48px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.homepage{
+    margin-top: 48px ;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content:end;
+    
+}
+
+.navbar li a{
+    text-decoration: none ;
+    color: white;
+    font-family: "area-normal", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+.body-home{
+    background-image: url(../assets/desktop-home.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    margin-left: 120px; 
+    
+}
+
+.section-principal{
+    margin-top: 248px;
+    font-weight: 100;  
+}
+
+.h1-home{
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 120px;
+    display: inline;
+
+}
+
+.h2-home{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 200;
+    font-size: 58px;
+    color: #ADFF00;
+    margin-left: 20px;
+    display: inline;
+}
+.p-instagram{
+    font-size: 28px;
+    padding: 10px 50px;
+    border: 1px solid white;
+    border-radius: 48px;
+    display: inline;
+
+}
+.p-ubicacion{
+    font-size: 28px;
+    padding: 20px ;
+    border: 1px solid white;
+    border-radius: 48px;
+    display: inline;
+}
+
+.asterisco{
+    font-size: 40px;
+    color: #ADFF00;
+}
+
+/* about me*/
+
+body{
+    background-color: #202020;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-family: "area-normal", sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+.section-aboutme{
+    margin-top: 50px;
+}
+
+.h1-aboutme{
+    font-size: 130px;
+    font-weight: 600;
+    line-height: 190px
+    ;
+}
+
+.global{
+    color: #ADFF00;
+}
+
+.p-portada{
+    font-size: 24px;
+    
+}
+
+.div-aboutme{
+    margin-top: 220px;
+}
+
+.titulo-aboutme{
+    font-size: 120px;
+    color: #2C2C2C;
+    line-height: 120px;
+    font-weight: 800;
+    
+}
+
+.introduccion{
+    display: flex;
+    column-gap: 224px;
+    margin-top: 200px;
+    font-size: 20px;
+}
+
+.hello-aboutme{
+    padding-top: 80px;
+    color: #ADFF00;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 48px;
+}
+
+.technical-skills{
+    color: #6E6E6E;
+    margin-top: 168px;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.tech-skills-titulo{
+    margin-top: 100px;
+    margin-bottom: 32px ;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 43px;
+    font-weight: 200;
+}
+
+.pastillas-skills{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+}
+
+.aptitud{
+    padding: 15px 30px;
+    border: 1px solid #6E6E6E ;
+    border-radius: 48px;
+    list-style: none;
+}
+
+footer{
+    margin: 60px 0px;
+    color: #2C2C2C;
+    font-family:'Space Grotesk', sans-serif ;
+    font-size: 20px;
+    
+}
+
+/*works*/
+
+h2{
+    margin-top: 48px;
+    color: white;
+    font-family:'Space Grotesk', sans-serif ;
+    font-size: 64px;
+    font-weight: 200;
+}
+
+.works-bajada{
+    color: #6E6E6E;
+    font-size: 20px;
+}
+.works{
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+
+.card{ 
+    width: 382px;
+    border: 24px;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+
+
+.imagen-card{
+    border-radius: 40px;
+    width: 382px;
+    height: 266px;
+}
+
+.descripcion-proyectos{
+    color: #6E6E6E;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.titulo-proyecto{
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: 200;
+}
+/*services*/
+
+.areas-diseno{
+    list-style: none; 
+}
+
+.areas{
+    border: 1px solid white;
+    border-radius: 48px;
+    padding: 10px 40px;
+    margin-top: 24px;
+}
+
+.services{
+    color: #ADFF00;
+    font-family:'Space Grotesk', sans-serif ;
+    font-size: 48px;
+}
+
+/* contact*/
+
+.titulo-contact{
+    font-size: 160px;
+    line-height: 220px;
+}
+
+.titulo-contact-color{
+    color: #ADFF00;
+}
+
+.contacto{
+    display:flex ;
+    flex-flow: row wrap;
+}
+
+.formulario
+{
+    width: 586px;
+    font-size: 24px;
+    color: #6E6E6E;
+    
+}
+
+.formulario form ul li{
+    list-style: none;
+}
+
+.contacto-redes{
+    font-size: 24px;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.redes{
+    width: 32px;
+    height: 32px;
+}
+
+.redes-ubicacion{
+    display: flex;
+    flex-flow: row;
+    column-gap: 16px;
+}
+
+
+
+
+
+
