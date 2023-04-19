@@ -24,32 +24,19 @@
         </nav>
     </header>
     <main>
-        <div>
-            <h1 class="titulo-contact">LETS GET IN <SPAn class="titulo-contact-color">TOUCH</SPAn></h1>
+        <div class="contenedor-contacto">
+            <h1 class="titulo-contact">LETS GET IN <strong class="titulo-contact-color">TOUCH</strong></h1>
+            <div class="pill-contacto"></div>
         </div>
-        <section >
-            <h2>contacto</h2>
+        <section class="info-contacto">
+            <h3>contacto</h3>
             <div class="contacto">
                 <div class="formulario">
-                    <form action="/my-handling-form-page" method="post">
-                        <ul>
-                            <li>
-                                <label for="name">name</label>
-                                <input type="text" id="name" name="user_name">
-                            </li>
-                            <li>
-                                <label for="mail">email</label>
-                                <input type="email" id="mail" name="user_mail">
-                            </li>
-                            <li>
-                                <label for="msg">subject</label>
-                                <textarea id="msg" name="user_message"></textarea>
-                            </li>
-                            <li>
-                                <label for="mail">message</label>
-                                <input type="email" id="mail" name="user_mail">
-                            </li>
-                        </ul>
+                    <form class="formulario-contacto">
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                                <input class="sujeto" type="subject" placeholder="Subject">
+                                <input class="message" type="message" placeholder="message">
                         <button type="submit">send</button>
                     </form>      
                 </div>
