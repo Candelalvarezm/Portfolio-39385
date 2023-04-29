@@ -52,42 +52,56 @@ header{
 .body-home{
     background-image: url(../assets/desktop-home.jpg);
     background-position: cover;
-    background-repeat: no-repeat;
-    margin-left: 120px; 
-    
+    margin: 0px 120px 0px 120px
 }
 
 .section-principal{
     display: grid;
-    grid-template-columns:408px 90px 389px 307px ;
+    grid-template-columns: repeat(12, 1fr) ;
     grid-template-rows: 128px 128px 128px;
-    margin-top: 150px;
+    column-gap: 24px;
+    margin-top: 235px;
     font-weight: 100;  
 }
 
 .h1-home-nombre{
     grid-row: 1/1;
-    grid-column: 1/2;
+    grid-column: 1/5;
     font-weight: 600;
-    font-size: 96px;
+    font-size: 105px;
     line-height: 120px;
+    font-family: "area-normal", sans-serif;
+    font-style: normal;
+    font-weight: 600;
 
 }
 
-.h1-home-apellido{
+.h1-home-alvarez{
     grid-row: 2/2;
     grid-column: 1/5;
     font-weight: 600;
-    font-size: 96px;
+    font-size: 105px;
     line-height: 120px;
+    font-family: "area-normal", sans-serif;
+    font-style: normal;
+}
+.h1-home-molina{
+    grid-row: 2/2;
+    grid-column: 6/8;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 105px;
+    line-height: 120px;
+    font-family: "area-normal", sans-serif;
+    font-style: normal;
 }
 
 .h2-home{
     grid-row: 3/3;
-    grid-column: 2/5;
+    grid-column: 5/12;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 200;
-    font-size: 58px;
+    font-size: 70px;
     color: #ADFF00;
     margin-left: 20px;
     align-self: center;
@@ -95,27 +109,27 @@ header{
 
 .p-instagram{
     grid-row: 3/3;
-    grid-column: 1/2;
+    grid-column: 1/5;
     height: 75px;
     align-self: center;
     font-size: 28px;
     text-align: center;
     padding-top: 10px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 48px;
 }
 
 .p-ubicacion{
-    margin-left: 35px;
     grid-row: 1/1;
-    grid-column: 3/4;
+    grid-column: 6/12;
+    margin-left: 80px;
     height: 75px;
     width: 370px;
     align-self: center;
     font-size: 25px;
-    padding: 10px 40px;
+    padding-top: 15px;
     text-align: center;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 48px;
 }
 
@@ -448,8 +462,174 @@ input{
     column-gap: 16px;
 }
 
+/*responsive*/
+/*Laptop s*/
+@media (max-width: 1024px){
+    /*index*/
+    .body-home{
+        background-position: cover;
+    }
+    .section-principal{
+        grid-template-columns: repeat(12, 1fr) ;
+        grid-template-rows: 115px 115px 115px; 
+    }
 
+    .h1-home-nombre{
+        grid-row: 1/1;
+        grid-column: 1/8;
+        font-size: 82px;
+    }
+    
+    .h1-home-alvarez{
+        grid-row: 2/2;
+        grid-column: 1/6;
+        font-size: 82px;
+    }
+    .h1-home-molina{
+        grid-row: 2/2;
+        grid-column: 7/12;
+        margin-left: 15px;
+        font-size: 82px;
+    }
+    
+    .h2-home{
+        grid-row: 3/3;
+        grid-column: 6/13;
+        font-size: 54px;
+        margin-left: 0px;
+        
+    }
+    
+    .p-instagram{
+        grid-row: 3/3;
+        grid-column: 1/6;
+        height: 60px;
+        font-size: 22px;
+        padding-top: 5px;;
+        
+    }
+    
+    .p-ubicacion{
+        grid-row: 1/1;
+        grid-column: 7/13;
+        width: 330px;
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 20px 0px 0px 50px;
+        height: 65px;
+    }
+}
 
+/*Tablet*/
+@media (max-width:768px){
+    /*index*/
+    .body-home{
+        background-position: cover;
+        margin:0px 80px 0px 80px}
+        
+    .section-principal{
+        margin-top: 150px;
+        grid-template-columns: repeat(12, 1fr) ;
+        grid-template-rows: 125px 125px 125px 90px 80px; 
+    }
 
+    .h1-home-nombre{
+        grid-row: 1/1;
+        grid-column: 1/12;
+        font-size:115px;
+    }
+    
+    .h1-home-alvarez{
+        grid-row: 2/2;
+        grid-column: 1/12;
+        font-size: 115px;
+    }
+    .h1-home-molina{
+        grid-row: 3/3;
+        grid-column: 1/12;
+        margin-left: 5px;
+        font-size: 115px;
+    }
+    
+    .h2-home{
+        grid-row: 4/4;
+        grid-column: 1/13;
+        font-size: 45px;
+        margin: 5px 0px 0px 0px;
+        align-self: normal;
+        
+    }
+    
+    .p-instagram{
+        display: none;
+        grid-row: 3/3;
+        grid-column: 1/6;
+        height: 60px;
+        font-size: 22px;
+        padding-top: 5px;;
+        
+    }
+    
+    .p-ubicacion{
+        grid-row: 5/5;
+        grid-column: 1/13;
+        width: 300px;
+        font-size: 20px;
+        padding-top: 10px;
+        margin: 0px 0px 0px 0px;
+        height: 65px;
+    }
 
+}
 
+/*mobile 1*/
+@media (max-width:425px){
+    /*index*/
+    .body-home{
+        background-position: cover;
+        margin:0px 24px 0px 24px}
+        
+    .section-principal{
+        margin-top: 200px;
+        grid-template-columns: repeat(12, 1fr) ;
+        grid-template-rows: 90px 90px 110px 55px 80px; 
+    }
+
+    .h1-home-nombre{
+        grid-row: 1/1;
+        grid-column: 1/12;
+        font-size:70px;
+    }
+    
+    .h1-home-alvarez{
+        grid-row: 2/2;
+        grid-column: 1/12;
+        font-size: 70px;
+    }
+    .h1-home-molina{
+        grid-row: 3/3;
+        grid-column: 1/12;
+        margin-left: 5px;
+        font-size: 70px;
+    }
+    
+    .h2-home{
+        grid-row: 4/4;
+        grid-column: 1/13;
+        font-size: 32px;
+        margin: 5px 0px 0px 0px;
+        align-self: normal;
+        
+    }
+    
+    .p-ubicacion{
+        grid-row: 5/5;
+        grid-column: 1/13;
+        width: 220px;
+        font-size: 16px;
+        padding-top: 5px;
+        margin: 0px 0px 0px 0px;
+        height: 45px;
+    }
+
+}
