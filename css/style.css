@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* index*/
+/* index original*/
 
 header{
     margin-top: 48px;
@@ -138,7 +138,7 @@ span{
 
 }
 
-/* about me*/
+/* about me original*/
 
 body{
     background-color: #202020;
@@ -162,7 +162,7 @@ body{
     grid-row: 1 / 1;
     font-size: 130px;
     font-weight: 600;
-    line-height: 190px;
+    
 }
 
 .h1-with{
@@ -170,20 +170,19 @@ body{
     grid-row: 1 / 1;
     font-size: 130px;
     font-weight: 600;
-    line-height: 190px;
+
 }
 .h1-global{
     grid-column: 1 /9;
     grid-row: 2 / 2;
     font-size: 130px;
     font-weight: 600;
-    line-height: 190px;
+    
 }
 .global{
     color: #ADFF00;
     font-size: 130px;
     font-weight: 600;
-    line-height: 190px;
     grid-column: 2/8;
     grid-row: 2 / 2;
     margin-left: 20px;
@@ -194,7 +193,6 @@ body{
     grid-row: 3 / 3;
     font-size: 130px;
     font-weight: 600;
-    line-height: 190px;
     
 }
 
@@ -280,8 +278,7 @@ footer{
     
 }
 
-/*works*/
-/*cambie el h3 antes era h2*/
+/*works original*/
 h3{
     margin-top: 48px;
     color: white;
@@ -302,7 +299,6 @@ h3{
     row-gap: 48px;
 }
 
-
 .card{ 
     width: 379px;
     border: 24px;
@@ -311,8 +307,6 @@ h3{
     flex-direction: column;
     /* justify-content: space-between; */
 }
-
-
 
 .imagen-card{
     border-radius: 40px;
@@ -331,7 +325,7 @@ h3{
     margin-top: 8px;
     font-weight: 200;
 }
-/*services*/
+/*services original*/
 
 .areas-diseno{
     list-style: none; 
@@ -350,7 +344,7 @@ h3{
     font-size: 48px;
 }
 
-/* contact*/
+/* contact original*/
 
 .portada-contacto{
     margin-top: 75px;
@@ -473,7 +467,7 @@ input{
 /*responsive*/
 /*Laptop s*/
 @media (max-width: 1024px){
-    /*index*/
+    /*index Laptop s*/
     .body-home{
         background-position: cover;
     }
@@ -481,13 +475,11 @@ input{
         grid-template-columns: repeat(12, 1fr) ;
         grid-template-rows: 115px 115px 115px; 
     }
-
     .h1-home-nombre{
         grid-row: 1/1;
         grid-column: 1/8;
         font-size: 82px;
     }
-
     .h1-home-alvarez{
         grid-row: 2/2;
         grid-column: 1/6;
@@ -499,7 +491,6 @@ input{
         margin-left: 15px;
         font-size: 82px;
     }
-    
     .h2-home{
         grid-row: 3/3;
         grid-column: 6/13;
@@ -507,7 +498,6 @@ input{
         margin-left: 0px;
         
     }
-    
     .p-instagram{
         grid-row: 3/3;
         grid-column: 1/6;
@@ -516,7 +506,6 @@ input{
         padding-top: 5px;;
         
     }
-    
     .p-ubicacion{
         grid-row: 1/1;
         grid-column: 7/13;
@@ -527,93 +516,89 @@ input{
         height: 65px;
     }
 
-    /* about me*/
+/* about me laptop s*/
 
-body{
-    margin: 0px 100px 0px 100px;
-}
+    body{
+        margin: 0px 100px 0px 100px;
+    }
+    .section-aboutme{
+        grid-template-rows: 150px 150px 150px;
+        margin-top: 90px;
+    }
+    .h1-aboutme{
+        font-size: 89px;
+    }
+    .h1-with{
+        font-size: 89px;  
+    }
+    .h1-global{
+        font-size: 89px;
+    }
+    .global{
+        font-size: 89px;
+    }
+    .h1-focus{
+        font-size: 89px;    
+    }
+    .p-portada{
+        padding-top: 40px;
+        padding-left: 15px;
+        font-size: 14px;
+    }
+    .container{
+        margin-top: 40px;
+        height: 50px;
+    }
+    .introduccion{
+        column-gap: 100px;
+        margin-top: 130px;
+        font-size: 15px;
+    }
+    .titulo-aboutme{
+        width: 320px;
+        font-size: 89px;
+        
+    }
+    .contenedor-hello{
+        width: 400px;
+    }
+    .technical-skills{
+        margin-top: 100px;
+        font-size: 20px;
+        font-weight: 400;
+        
+    }
+    .tech-skills-titulo{
+        font-size: 35px;
+        font-weight: 200;
+    }
+    .pastillas-skills{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+    }
+    .aptitud{
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    footer{
+        font-size: 18px;
+    }
 
-.section-aboutme{
-    grid-template-rows: 150px 150px 150px;
-    margin-top: 120px;
-}
-
-.h1-aboutme{
-    font-size: 89px;
-}
-.h1-with{
-    font-size: 89px;  
-}
-.h1-global{
-    font-size: 89px;
-}
-.global{
-    font-size: 89px;
-}
-
-.h1-focus{
-    font-size: 89px;    
-}
-
-.p-portada{
-    padding-top: 40px;
-    padding-left: 15px;
-    font-size: 14px;
-}
-
-.container{
-    margin-top: 40px;
-    height: 50px;
-}
-
-.introduccion{
-    column-gap: 100px;
-    margin-top: 100px;
-    font-size: 15px;
-}
-.titulo-aboutme{
-    width: 320px;
-    font-size: 89px;
-    
-}
-.contenedor-hello{
-    width: 400px;
-}
+/*works laptop s*/
+    .works{
+        column-gap: 48px;
+    }
+    .card{ 
+        width: 388px;
+    }
 
 
-.technical-skills{
-    
-    margin-top: 120px;
-    font-size: 20px;
-    font-weight: 400;
-    
-}
-
-.tech-skills-titulo{
-    font-size: 35px;
-    font-weight: 200;
-}
-
-.pastillas-skills{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
-}
-
-.aptitud{
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-footer{
-    font-size: 18px;
-}
-    
 }
 
 /*Tablet*/
 @media (max-width:768px){
-    /*index*/
+    /*index tablet*/
     .body-home{
         background-position: cover;
         margin:0px 80px 0px 80px}
@@ -622,13 +607,11 @@ footer{
         margin-top: 150px;
         grid-template-rows: 125px 125px 125px 90px 80px; 
     }
-
     .h1-home-nombre{
         grid-row: 1/1;
         grid-column: 1/12;
         font-size:115px;
     }
-    
     .h1-home-alvarez{
         grid-row: 2/2;
         grid-column: 1/12;
@@ -640,26 +623,21 @@ footer{
         margin-left: 5px;
         font-size: 115px;
     }
-    
     .h2-home{
         grid-row: 4/4;
         grid-column: 1/13;
         font-size: 45px;
         margin: 5px 0px 0px 0px;
-        align-self: normal;
-        
+        align-self: normal; 
     }
-    
     .p-instagram{
         display: none;
         grid-row: 3/3;
         grid-column: 1/6;
         height: 60px;
         font-size: 22px;
-        padding-top: 5px;;
-        
+        padding-top: 5px;; 
     }
-    
     .p-ubicacion{
         grid-row: 5/5;
         grid-column: 1/13;
@@ -670,103 +648,122 @@ footer{
         height: 65px;
     }
 
-/* about me*/
+/* about me tablet*/
+    body{
+        margin: 0px 68px 0px 68px;
+    }
+    .section-aboutme{
+        grid-template-rows: 150px 150px 150px 150px;
+        margin-top: 120px;
+    }
+    .h1-aboutme{
+        font-size: 105px;
+        grid-column: 1/13;
+    }
+    .h1-with{
+        font-size: 105px;
+        grid-column: 1/7;
+        grid-row: 2/2;
+    }
+    .h1-global{
+        font-size: 105px;
+        grid-column: 1/9;
+        grid-row: 3/3;
+    }
+    .global{
+        font-size: 105px;
+        margin-left: 0px;
+        grid-column: 3/9;
+        grid-row: 3/3;
+    }
+    .h1-focus{
+        font-size: 105px; 
+        grid-column: 1/13;
+        grid-row: 4/4;
+    }
+    .p-portada{
+        margin-left: 50px;
+        grid-column: 6/13; 
+    }
+    .container{
+        margin: 60px 0px 0px 40px;
+        height: 35px;
+        grid-column: 8/13;
+        grid-row: 4/4;
+    }
+    .introduccion{
+        column-gap: 30px;
+        margin-top: 220px;
+        font-size: 14px;
+    }
+    .titulo-aboutme{
+        width: 250px;
+        font-size: 75px;
+        line-height: 80px;   
+    }
+    .contenedor-hello{
+        width: 350px;
+    }
+    .hello-aboutme{
+        margin-top: 20px;
+        font-size: 32px;
+    }
+    .technical-skills{
+        font-size: 18px;
+    }
+    .tech-skills-titulo{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .aptitud{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    footer{
+        font-size: 14px;
+    }
+/*works tablet*/
+    h3{
+    font-size: 55px;
+    }
+    .works-bajada{
+        font-size: 18px;
+    }
+    .works{
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+    .card{ 
+        width: 304px;
+        border: 24px;
+        height: 320px;
+    }
+    .imagen-card{
+        width: 304px;
+        height: 230px;
+    }
+    .descripcion-proyectos{
+        font-size: 14px;
+    }
+    .titulo-proyecto{
+        font-size: 20px;
+        margin-top: 10px;
+    }
 
-body{
-    margin: 0px 68px 0px 68px;
+/*services tablet*/
+.areas{
+    margin-top: 20px;
 }
-
-.section-aboutme{
-    grid-template-rows: 150px 150px 150px 150px;
-    margin-top: 120px;
+.services{
+    font-size: 40px;
 }
-
-.h1-aboutme{
-    font-size: 105px;
-    grid-column: 1/13;
 }
-.h1-with{
-    font-size: 105px;
-    grid-column: 1/7;
-    grid-row: 2/2;
-}
-.h1-global{
-    font-size: 105px;
-    grid-column: 1/9;
-    grid-row: 3/3;
-}
-.global{
-    font-size: 105px;
-    margin-left: 0px;
-    grid-column: 3/9;
-    grid-row: 3/3;
-}
-.h1-focus{
-    font-size: 105px; 
-    grid-column: 1/13;
-    grid-row: 4/4;
-}
-
-.p-portada{
-    margin-left: 50px;
-    grid-column: 6/13; 
-}
-
-.container{
-    margin: 60px 0px 0px 40px;
-    height: 35px;
-    grid-column: 8/13;
-    grid-row: 4/4;
-}
-
-.introduccion{
-    column-gap: 100px;
-    margin-top: 100px;
-    font-size: 15px;
-}
-.titulo-aboutme{
-    width: 320px;
-    font-size: 89px;
-    
-}
-.contenedor-hello{
-    width: 400px;
-}
-
-
-.technical-skills{
-    
-    margin-top: 120px;
-    font-size: 20px;
-    font-weight: 400;
-    
-}
-
-.tech-skills-titulo{
-    font-size: 35px;
-    font-weight: 200;
-}
-
-.pastillas-skills{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
-}
-
-.aptitud{
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-footer{
-    font-size: 18px;
-}}
 
 
 
 /*mobile 1*/
 @media (max-width:425px){
-    /*index*/
+    /*index moblie 425*/
     .body-home{
         margin:0px 24px 0px 24px}
         
@@ -774,11 +771,9 @@ footer{
         margin-top: 200px;
         grid-template-rows: 90px 90px 110px 55px 80px; 
     }
-
     .h1-home-nombre{
         font-size:70px;
     }
-    
     .h1-home-alvarez{
         font-size: 70px;
     }
@@ -786,12 +781,10 @@ footer{
         margin-left: 5px;
         font-size: 70px;
     }
-    
     .h2-home{
         font-size: 32px;
         margin: 5px 0px 0px 0px;
     }
-    
     .p-ubicacion{
         width: 220px;
         font-size: 16px;
@@ -800,21 +793,88 @@ footer{
         height: 45px;
     }
 
-}
+    /* about me mobile 425*/
+    body{
+        margin: 0px 24px 0px 24px;
+    }
+    .section-aboutme{
+        grid-template-rows: 80px 80px 80px 80px;
+        margin-top: 200px;
+    }
+    .h1-aboutme{
+        font-size: 62px;
+    }
+    .h1-with{
+        font-size: 62px;
+    }
+    .h1-global{
+        font-size: 62px;
+    }
+    .global{
+        font-size: 62px;
+    }
+    .h1-focus{
+        font-size: 62px;
+    }
+    .p-portada{
+        display: none;
+    }
+    .container{
+        margin: 30px 0px 0px 20px;
+        height: 35px;
+    }
+    .introduccion{
+        margin-top: 290px;
+        font-size: 14px;
+    }
+    .titulo-aboutme{
+        width: 100%;
+        font-size: 65px;
+    }
+    .contenedor-hello{
+        margin-top: 30px;
+    }
+    /*works mobile 425*/
+    h3{
+        font-size: 45px;
+    }
+    .works-bajada{
+        font-size: 18px;
+    }
+    .works{
+        row-gap: 24px;
+    }
+    .card{ 
+        width: 100%;
+        border: 24px;
+        height: 320px;
+    }
+    .imagen-card{
+        width:100%;
+        height: 210px;
+    }
+
+    /*services mobile 425*/
+
+    .areas{
+        padding: 10px 40px;
+        margin-top: 18px;
+    }
+    .services{
+        font-size: 32px;
+    }
+    }
 
 /*mobile mio (mi celular)*/
-@media (max-width:380px){
-    /*index*/
-        
+@media (max-width:390px){
+    /*index mobile 390*/    
     .section-principal{
         margin-top: 120px;
         grid-template-rows: 80px 80px 110px 45px 80px; 
     }
-
     .h1-home-nombre{
         font-size: 60px;
     }
-    
     .h1-home-alvarez{
         font-size: 60px;
     }
@@ -822,41 +882,102 @@ footer{
         margin-left: 0px;
         font-size: 60px;
     }
-    
     .h2-home{
         font-size: 28px;
     }
-    
     .p-ubicacion{
         width: 200px;
         font-size: 15px;
     }
 
+    /* about me mobile 390*/
+    .h1-aboutme{
+        font-size: 56px;
+    }
+    .h1-with{
+        font-size: 56px;
+    }
+    .h1-global{
+        font-size: 56px;
+    }
+    .global{
+        font-size: 56px;
+    }
+    .h1-focus{
+        font-size: 56px;
+    }
+    .titulo-aboutme{
+        font-size: 56px;
+    }
+    .contenedor-hello{
+        margin-top: 20px;
+    }
+    .technical-skills{
+        margin-top: 0px;
+    }
+    .tech-skills-titulo{
+        font-size: 28px;
+    }
 }
 
-
-/*mobile s*/
+/*mobile 320*/
 @media (max-width:320px){
-    /*index*/  
+    /*index mobile 320*/  
     .section-principal{
         grid-template-rows: 65px 65px 100px 45px 75px; 
     }
-
     .h1-home-nombre{
         font-size: 50px;
     }
-    
     .h1-home-alvarez{
         font-size: 50px;
     }
     .h1-home-molina{
         font-size: 50px;
     }
-    
     .h2-home{
         font-size: 25px;
     }
-    
     .p-ubicacion{
         height: 40px;
-    }}
+    }
+
+    /* about me mobile 320*/
+    .h1-aboutme{
+        font-size: 45px;
+    }
+    .h1-with{
+        font-size:45px;
+    }
+    .h1-global{
+        font-size: 45px;
+    }
+    .global{
+        font-size: 45px;
+    }
+    .h1-focus{
+        font-size: 45px;
+    }
+    .container{
+        margin-top: 5px;
+    }
+    .titulo-aboutme{
+        font-size: 45px;
+    }
+    .contenedor-hello{
+        margin-top: 20px;
+    }
+
+/*works*/
+    h3{
+        font-size: 36px;
+    }   
+
+/*services mobile 425*/
+.areas{
+    margin-top: 12px;
+}
+.services{
+    font-size: 23px;
+}
+}
