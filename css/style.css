@@ -7,48 +7,34 @@
     box-sizing: border-box;
 }
 
-/* index original*/
 
-header{
-    margin-top: 48px;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.homepage{
-    margin-top: 48px ;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: end;
-}
-.logo{
-    color: white;
-    text-decoration: none;
-}
-
+/* navegacion */
 .navbar{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    justify-content:end;
-    
-}
-
-.navbar li a{
-    text-decoration: none ;
     color: white;
-    font-family: "area-normal", sans-serif;
-    font-style: normal;
-    font-weight: 100;
     font-size: 20px;
-
 }
 
+.links-navbar{
+    color: white;
+    font-weight: 100;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 10px 5px 20px;
+}
+
+.pill-links{
+    border: 2px solid transparent ;
+}
+
+.pill-links:hover{
+    border: 2px solid #ADFF00 ;
+    border-radius: 48px;
+}
+
+.links-navbar:hover{
+    color: #ADFF00;
+}
+
+/* index original*/
 .body-home{
     background-image: url(../assets/desktop-home.jpg);
     background-position: cover;
@@ -73,7 +59,6 @@ header{
     font-family: "area-normal", sans-serif;
     font-style: normal;
     font-weight: 600;
-
 }
 
 .h1-home-alvarez{
@@ -85,6 +70,7 @@ header{
     font-family: "area-normal", sans-serif;
     font-style: normal;
 }
+
 .h1-home-molina{
     grid-row: 2/2;
     grid-column: 6/8;
@@ -119,6 +105,10 @@ header{
     border-radius: 48px;
 }
 
+.p-instagram:hover{
+    background-color: #2020201b;
+}
+
 .p-ubicacion{
     grid-row: 1/1;
     grid-column: 6/12;
@@ -133,13 +123,15 @@ header{
     border-radius: 48px;
 }
 
+.p-ubicacion:hover{
+    background-color: #2020201b;
+}
+
 span{
     color: #ADFF00;
-
 }
 
 /* about me original*/
-
 body{
     background-color: #202020;
     margin-left: 120px;
@@ -162,7 +154,6 @@ body{
     grid-row: 1 / 1;
     font-size: 130px;
     font-weight: 600;
-    
 }
 
 .h1-with{
@@ -170,15 +161,15 @@ body{
     grid-row: 1 / 1;
     font-size: 130px;
     font-weight: 600;
-
 }
+
 .h1-global{
     grid-column: 1 /9;
     grid-row: 2 / 2;
     font-size: 130px;
     font-weight: 600;
-    
 }
+
 .global{
     color: #ADFF00;
     font-size: 130px;
@@ -193,7 +184,6 @@ body{
     grid-row: 3 / 3;
     font-size: 130px;
     font-weight: 600;
-    
 }
 
 .p-portada{
@@ -204,7 +194,7 @@ body{
     align-self: center;
 }
 
-.container{
+.container-pill{
     margin-left: 10px;
     border: 2px solid #ffffff ;
     border-radius: 48px;
@@ -219,8 +209,7 @@ body{
     font-size: 120px;
     color: #2C2C2C;
     line-height: 120px;
-    font-weight: 800;
-    
+    font-weight: 800; 
 }
 
 .introduccion{
@@ -230,9 +219,11 @@ body{
     margin-top: 200px;
     font-size: 20px;
 }
+
 .contenedor-hello{
     width: 586px;
 }
+
 .hello-aboutme{
     margin-top: 40px;
     color: #ADFF00;
@@ -291,6 +282,7 @@ h3{
     color: #6E6E6E;
     font-size: 20px;
 }
+
 .works{
     margin-top: 40px;
     display: flex;
@@ -299,14 +291,14 @@ h3{
     row-gap: 48px;
 }
 
-.card{ 
+.works-card{ 
     width: 379px;
     border: 24px;
     height: 368px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
+
 
 .imagen-card{
     border-radius: 40px;
@@ -325,11 +317,12 @@ h3{
     margin-top: 8px;
     font-weight: 200;
 }
-/*services original*/
 
+/*services original*/
 .areas-diseno{
     list-style: none; 
     color: #ADFF00;
+    padding-left: 0px;
 }
 
 .areas{
@@ -337,6 +330,10 @@ h3{
     border-radius: 48px;
     padding: 10px 40px;
     margin-top: 24px;
+}
+
+.areas:hover{
+    background-color: #ffffff27;
 }
 
 .services{
@@ -347,16 +344,17 @@ h3{
 /* contact original*/
 
 .portada-contacto{
-    margin-top: 75px;
+    margin-top: 120px;
     display: grid;
-    grid-template-columns: 608px auto;
-    grid-template-rows: 216px 216px;
+    grid-template-columns: repeat(12, 1fr) ;
+    column-gap: 24px;
+    grid-template-rows: 200px 200px 200px;
 }
 
 .titulo-contact{
     font-size: 160px;
     line-height: 220px;
-    grid-column: 1/3;
+    grid-column: 1/13;
     
 }
 
@@ -365,9 +363,9 @@ h3{
     border: 2px solid #ffffff ;
     border-radius: 48px;
     height: 56px;
-    grid-column: 2 / 4;
+    grid-column: 7 / 13;
     align-self: center;
-    margin-top: 35px;
+    margin-top: 90px;
 }
 
 .titulo-contact-color{
@@ -444,7 +442,6 @@ input{
     margin-left: 495px;
 }
 
-
 .contacto-redes{
     font-size: 24px;
     display: flex;
@@ -472,6 +469,7 @@ input{
         background-position: cover;
     }
     .section-principal{
+        margin-top: 150px;
         grid-template-columns: repeat(12, 1fr) ;
         grid-template-rows: 115px 115px 115px; 
     }
@@ -517,7 +515,6 @@ input{
     }
 
 /* about me laptop s*/
-
     body{
         margin: 0px 100px 0px 100px;
     }
@@ -545,7 +542,7 @@ input{
         padding-left: 15px;
         font-size: 14px;
     }
-    .container{
+    .container-pill{
         margin-top: 40px;
         height: 50px;
     }
@@ -589,11 +586,9 @@ input{
     .works{
         column-gap: 48px;
     }
-    .card{ 
+    .works-card{ 
         width: 388px;
     }
-
-
 }
 
 /*Tablet*/
@@ -649,8 +644,11 @@ input{
     }
 
 /* about me tablet*/
+    header{
+        margin: 0px;
+    }
     body{
-        margin: 0px 68px 0px 68px;
+        margin: 0px 68px 0px 68px; 
     }
     .section-aboutme{
         grid-template-rows: 150px 150px 150px 150px;
@@ -685,9 +683,9 @@ input{
         margin-left: 50px;
         grid-column: 6/13; 
     }
-    .container{
-        margin: 60px 0px 0px 40px;
-        height: 35px;
+    .container-pill{
+        margin: 10px 0px 0px 40px;
+        height: 45px;
         grid-column: 8/13;
         grid-row: 4/4;
     }
@@ -722,6 +720,7 @@ input{
     footer{
         font-size: 14px;
     }
+
 /*works tablet*/
     h3{
     font-size: 55px;
@@ -733,7 +732,7 @@ input{
         column-gap: 24px;
         row-gap: 48px;
     }
-    .card{ 
+    .works-card{ 
         width: 304px;
         border: 24px;
         height: 320px;
@@ -759,16 +758,17 @@ input{
 }
 }
 
-
-
-/*mobile 1*/
+/*mobile 425*/
 @media (max-width:425px){
     /*index moblie 425*/
+    .navbar{
+        font-size: 18px;
+    }
     .body-home{
         margin:0px 24px 0px 24px}
         
     .section-principal{
-        margin-top: 200px;
+        margin-top: 80px;
         grid-template-rows: 90px 90px 110px 55px 80px; 
     }
     .h1-home-nombre{
@@ -799,7 +799,7 @@ input{
     }
     .section-aboutme{
         grid-template-rows: 80px 80px 80px 80px;
-        margin-top: 200px;
+        margin-top: 80px;
     }
     .h1-aboutme{
         font-size: 62px;
@@ -819,12 +819,12 @@ input{
     .p-portada{
         display: none;
     }
-    .container{
-        margin: 30px 0px 0px 20px;
+    .container-pill{
+        margin: 0px 0px 0px 20px;
         height: 35px;
     }
     .introduccion{
-        margin-top: 290px;
+        margin-top: 320px;
         font-size: 14px;
     }
     .titulo-aboutme{
@@ -834,6 +834,7 @@ input{
     .contenedor-hello{
         margin-top: 30px;
     }
+
     /*works mobile 425*/
     h3{
         font-size: 45px;
@@ -844,7 +845,7 @@ input{
     .works{
         row-gap: 24px;
     }
-    .card{ 
+    .works-card{ 
         width: 100%;
         border: 24px;
         height: 320px;
@@ -855,7 +856,6 @@ input{
     }
 
     /*services mobile 425*/
-
     .areas{
         padding: 10px 40px;
         margin-top: 18px;
@@ -865,11 +865,10 @@ input{
     }
     }
 
-/*mobile mio (mi celular)*/
+/*mobile 390 (mi celular)*/
 @media (max-width:390px){
     /*index mobile 390*/    
     .section-principal{
-        margin-top: 120px;
         grid-template-rows: 80px 80px 110px 45px 80px; 
     }
     .h1-home-nombre{
@@ -922,8 +921,9 @@ input{
 
 /*mobile 320*/
 @media (max-width:320px){
-    /*index mobile 320*/  
+    /*index mobile 320*/ 
     .section-principal{
+        margin-top: 0px;
         grid-template-rows: 65px 65px 100px 45px 75px; 
     }
     .h1-home-nombre{
@@ -958,8 +958,9 @@ input{
     .h1-focus{
         font-size: 45px;
     }
-    .container{
-        margin-top: 5px;
+    .container-pill{
+        align-self: flex-start;
+        margin: 15px 0px 0px 10px;   
     }
     .titulo-aboutme{
         font-size: 45px;
@@ -968,12 +969,12 @@ input{
         margin-top: 20px;
     }
 
-/*works*/
+/*works mobile 320*/
     h3{
         font-size: 36px;
     }   
 
-/*services mobile 425*/
+/*services mobile 320*/
 .areas{
     margin-top: 12px;
 }
