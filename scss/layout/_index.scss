@@ -1,0 +1,62 @@
+// Homepage
+.body-home{
+    background-image: url(../assets/desktop-home.jpg);
+    background-position: cover;
+    margin: 0px 120px 0px 120px
+}
+
+.section-principal{
+    @include grid (grid,repeat(12, 1fr), repeat (3, 128px), 24px, 0px);
+    margin-top: 235px;
+    .h1-home-nombre{
+        @include gridposition (1, 6, 1,1);
+        @include text ($font-area, 600, normal, 95px, $body-color);
+    }
+    .h1-home-alvarez{
+        @include gridposition (1, 5, 2,2);
+        @include text ($font-area, 600, normal, 95px, $body-color);
+    }
+    .h1-home-molina{
+        @include gridposition (5, 8, 2,2);
+        @include text ($font-area, 600, normal, 95px, $body-color);
+        padding-left: 60px;
+    }
+    .h2-home{
+        @include gridposition (5, 10, 3,3);
+        @include text ($font-space, 400, normal, 59px, $color-green);
+    }
+    .p-instagram{
+        @include gridposition (1, 5, 3,3);
+        @include text ($font-area, 100, normal, 25px, $body-color);
+        @include border (2px,solid,$body-color,48px);
+        height:70px;
+        align-self: center;
+        text-align: center;
+        padding-top: 15px;
+        margin-bottom: 0px;
+        &:hover{
+            background-color: $pill-hover;
+        }
+    }
+    .p-ubicacion{
+        @include gridposition (6, 10, 1,1);
+        @include text ($font-area, 100, normal, 25px, $body-color);
+        @include border (2px,solid,$body-color,48px);
+        height:75px;
+        align-self: center;
+        text-align: center;
+        padding-top: 15px;
+        margin-bottom: 0px;
+        &:hover{
+            background-color: $pill-hover;
+        }
+        span{
+            color: $color-green;
+        }
+    }
+
+}
+
+// @mixin text ($font, $weight, $style, $size, $color)
+// @mixin grid ($column, $row, $cgap, $rgap, $gridrow, $gridcolumn)
+// @mixin border ($thickness, $style, $color, $radius)

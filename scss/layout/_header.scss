@@ -1,0 +1,25 @@
+// Navegación
+.navbar{
+    @include text ($font-area, 400, normal, 20px,$body-color);
+    &:hover{
+        color: $color-green;
+    }
+    .pill-links{
+        @include border (2px, solid, transparent, 48px);
+        .links-navbar{
+            @include text ($font-area, 100, normal, 18px,$body-color);
+            margin: 0px 15px 0px 15px;
+            padding: 0px 10px 5px 10px;
+            &:hover{
+                color: $color-green;
+            }
+        }
+        &:hover{
+            @include border (2px, solid, $color-green, 48px)
+        }
+    }
+    }
+
+
+
+

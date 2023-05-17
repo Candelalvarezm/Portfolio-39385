@@ -1,0 +1,31 @@
+@media (max-width:425px){
+    .navbar{
+        @include text ($font-area, 400, normal, 18px,$body-color);
+    }
+    .body-home{
+        margin: 0px 24px 0px 24px;
+    }
+    .section-principal{
+        @include grid (grid,repeat(12, 1fr), 90px 90px 90px 55px 80px, 24px, 0px);
+        margin-top: 80px;
+        .h1-home-nombre{
+            @include text ($font-area, 600, normal, 70px, $body-color);
+        }
+        .h1-home-alvarez{
+            @include text ($font-area, 600, normal, 70px, $body-color);
+        }
+        .h1-home-molina{
+            @include text ($font-area, 600, normal, 70px, $body-color);
+        }
+        .h2-home{
+            @include text ($font-space, 400, normal, 32px, $color-green);
+            margin: 5px 0px 0px 0px;
+        }
+        .p-ubicacion{
+            @include text ($font-area, 100, normal, 16px, $body-color);
+            width: 220px;
+            height:45px;
+            padding-top: 5px;
+        }
+    }
+}

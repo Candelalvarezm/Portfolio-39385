@@ -1,0 +1,38 @@
+//index
+@media (max-width:1024px){
+    .section-principal{
+        @include grid (grid,repeat(12, 1fr), repeat (3, 115px), 24px, 0px);
+        margin-top: 150px;
+        .h1-home-nombre{
+            @include gridposition (1, 8, 1,1);
+            @include text ($font-area, 600, normal, 82px, $body-color);
+        }
+        .h1-home-alvarez{
+            @include gridposition (1, 6, 2,2);
+            @include text ($font-area, 600, normal, 82px, $body-color);
+        }
+        .h1-home-molina{
+            @include gridposition (7, 10, 2,2);
+            @include text ($font-area, 600, normal, 82px, $body-color);
+            padding-left: 0px;
+        }
+        .h2-home{
+            @include gridposition (6, 13, 3,3);
+            @include text ($font-space, 400, normal, 54px, $color-green);
+        }
+        .p-instagram{
+            @include gridposition (1, 6, 3,3);
+            @include text ($font-area, 100, normal, 22px, $body-color);
+            height: 60px;
+            padding-top: 10px;
+        }
+        .p-ubicacion{
+            @include gridposition (8, 13, 1,1);
+            @include text ($font-area, 100, normal, 22px, $body-color);
+            height:60px;
+            padding-top: 10px;
+        }
+
+    }
+}
+

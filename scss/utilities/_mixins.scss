@@ -1,0 +1,27 @@
+@mixin text ($font, $weight, $style, $size, $color) {
+    font-family: $font;
+    font-weight: $weight;
+    font-style: $style;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin border ($thickness, $style, $color, $radius){
+    border: $thickness $style $color;
+    border-radius: $radius;
+}
+
+@mixin grid ($grid,$column, $row, $cgap, $rgap){
+    display: $grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    column-gap: $cgap;
+    row-gap:$rgap;
+}
+
+@mixin gridposition ($colstart, $colend, $rowstart, $rowend){
+    grid-column-start: $colstart ;
+    grid-column-end: $colend;
+    grid-row-start: $rowstart;
+    grid-row-end: $rowend;
+}

@@ -1,0 +1,22 @@
+@media (max-width:320px){
+    // index
+    .section-principal{
+        @include grid (grid,repeat(12, 1fr), 65px 65px 65px 45px 50px, 24px, 0px);
+        margin-top: 0px;
+        .h1-home-nombre{
+            @include text ($font-area, 600, normal, 50px, $body-color);
+        }
+        .h1-home-alvarez{
+            @include text ($font-area, 600, normal, 50px, $body-color);
+        }
+        .h1-home-molina{
+            @include text ($font-area, 600, normal, 50px, $body-color);
+        }
+        .h2-home{
+            @include text ($font-space, 400, normal, 25px, $color-green);
+        }
+        .p-ubicacion{
+            height: 40px;
+        }
+    }
+}

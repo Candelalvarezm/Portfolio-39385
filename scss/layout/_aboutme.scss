@@ -1,0 +1,52 @@
+body{
+    background-color: $background-principal;
+    @include text ($font-area, 200, normal, 20px, $body-color);
+    margin: 0px 120px 0px 120px;
+}
+
+.section-aboutme{
+    @include grid (grid, repeat(12,1fr), repeat(3,170px),24px,0px);
+    margin-top:120px;
+    .h1-aboutme{
+        @include gridposition (1,13,1,1);
+        @include text ($font-area, 600, normal, 130px, $body-color);
+    }
+    .h1-with{
+        @include gridposition (9,13,1,1);
+        @include text ($font-area, 600, normal, 130px, $body-color);
+        padding-right: 100px;
+    }
+    .h1-global{
+        @include gridposition (1,9,2,2);
+        @include text ($font-area, 600, normal, 130px, $body-color);
+    }
+    .global{
+        @include gridposition (2,8,2,2);
+        @include text ($font-area, 600, normal, 130px, $color-green);
+    }
+    .h1-focus{
+        @include gridposition (1,5,3,3);
+        @include text ($font-area, 600, normal, 130px, $body-color);
+    }
+    .p-portada{
+        @include gridposition (8,13,2,2);
+        @include text ($font-area, 200, normal, 22px, $body-color);
+        align-self: center;
+        padding-top: 10px;
+    }
+    .container-pill{
+        @include border (2px, solid, $body-color, 48px);
+        @include gridposition (6,13,3,3);
+        height: 56px;
+        align-self: center;
+    }
+}
+
+
+
+
+
+// @mixin text ($font, $weight, $style, $size, $color)
+//@mixin grid ($grid,$column, $row, $cgap, $rgap)
+//@mixin gridposition ($colstart, $colend, $rowstart, $rowend)
+//@mixin border ($thickness, $style, $color, $radius)
