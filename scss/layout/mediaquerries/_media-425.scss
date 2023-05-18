@@ -1,4 +1,4 @@
-@media (max-width:425px){
+@media (max-width:430px){
     .navbar{
         @include text ($font-area, 400, normal, 18px,$body-color);
     }
@@ -26,6 +26,57 @@
             width: 220px;
             height:45px;
             padding-top: 5px;
+        }
+    }
+
+    //about me
+    body{
+        margin: 0px 24px 0px 24px;
+    }
+    
+    .section-aboutme{
+        @include grid (grid, repeat(12,1fr), repeat(4,80px),24px,0px);
+        margin-top:80px;
+        .h1-aboutme{
+            @include text ($font-area, 600, normal, 62px, $body-color);
+        }
+        .h1-with{
+            @include text ($font-area, 600, normal, 62px, $body-color);
+        }
+        .h1-global{
+            @include text ($font-area, 600, normal, 62px, $body-color);
+        }
+        .global{
+            @include text ($font-area, 600, normal, 62px, $color-green);
+        }
+        .h1-focus{
+            @include text ($font-area, 600, normal, 62px, $body-color);
+        }
+        .p-portada{
+            display: none;
+        }
+        .container-pill{
+            height: 35px;
+            margin: 00px 0px 0px 20px;
+        }
+    }
+    
+    .introduccion{
+        margin-top: 350px;
+        .titulo-aboutme{
+            @include text ($font-area, 800,normal,65px,$dark-gray);
+            width: 100%;
+        }
+        .contenedor-hello{
+            width: 100%;
+        }
+        
+    }
+    
+    .technical-skills{
+        margin-top: 40px;
+        .tech-skills-titulo{
+            @include text ($font-space, 200,normal,28px,$light-gray); 
         }
     }
 }

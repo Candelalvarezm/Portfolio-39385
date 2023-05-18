@@ -6,14 +6,14 @@
   box-sizing: border-box;
 }
 
-.navbar {
+.navbar .nombre {
   font-family: "area-normal", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
   color: white;
 }
-.navbar:hover {
+.navbar .nombre:hover {
   color: #ADFF00;
 }
 .navbar .pill-links {
@@ -158,7 +158,7 @@ body {
   grid-template-rows: repeat(3, 170px);
   column-gap: 24px;
   row-gap: 0px;
-  margin-top: 120px;
+  margin-top: 140px;
 }
 .section-aboutme .h1-aboutme {
   grid-column-start: 1;
@@ -238,6 +238,73 @@ body {
   grid-row-end: 3;
   height: 56px;
   align-self: center;
+}
+
+.introduccion {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 240px;
+  column-gap: 180px;
+  font-family: "area-normal", sans-serif;
+  font-weight: none;
+  font-style: normal;
+  font-size: 20px;
+  color: none;
+}
+.introduccion .titulo-aboutme {
+  font-family: "area-normal", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 120px;
+  color: #2C2C2C;
+  width: 410px;
+}
+.introduccion .contenedor-hello {
+  width: 580px;
+}
+.introduccion .hello-aboutme {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 48px;
+  color: #ADFF00;
+  margin-top: 60px;
+}
+
+.technical-skills {
+  margin-top: 120px;
+}
+.technical-skills .tech-skills-titulo {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 43px;
+  color: #6e6e6e;
+}
+.technical-skills .pastillas-skills {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+}
+.technical-skills .aptitud {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #6e6e6e;
+  list-style: none;
+  border: 1px solid #6e6e6e;
+  border-radius: 48px;
+  padding: 15px 30px;
+}
+
+footer {
+  margin: 60px 0px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: none;
+  font-style: normal;
+  font-size: 20px;
+  color: #2C2C2C;
 }
 
 @media (max-width: 1024px) {
@@ -320,6 +387,109 @@ body {
     height: 60px;
     padding-top: 10px;
   }
+  body {
+    margin: 0px 100px 0px 100px;
+  }
+  .section-aboutme {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    column-gap: 24px;
+    row-gap: 0px;
+    margin-top: 90px;
+  }
+  .section-aboutme .h1-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 89px;
+    color: white;
+  }
+  .section-aboutme .h1-with {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 89px;
+    color: white;
+    padding-right: 100px;
+  }
+  .section-aboutme .h1-global {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 89px;
+    color: white;
+  }
+  .section-aboutme .global {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 89px;
+    color: #ADFF00;
+  }
+  .section-aboutme .h1-focus {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 89px;
+    color: white;
+  }
+  .section-aboutme .p-portada {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    color: white;
+    padding-top: 0px;
+  }
+  .section-aboutme .container-pill {
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .introduccion {
+    margin-top: 130px;
+    column-gap: 100px;
+    font-family: "area-normal", sans-serif;
+    font-weight: none;
+    font-style: normal;
+    font-size: 15px;
+    color: none;
+  }
+  .introduccion .titulo-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 89px;
+    color: #2C2C2C;
+    width: 320px;
+  }
+  .introduccion .contenedor-hello {
+    width: 370px;
+  }
+  .introduccion .hello-aboutme {
+    margin-top: 40px;
+  }
+  .technical-skills {
+    margin-top: 100px;
+  }
+  .technical-skills .tech-skills-titulo {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 35px;
+    color: #6e6e6e;
+  }
+  .technical-skills .pastillas-skills {
+    gap: 10px;
+  }
+  .technical-skills .aptitud {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #6e6e6e;
+    padding: 10px 20px;
+  }
 }
 @media (max-width: 768px) {
   .body-home {
@@ -394,8 +564,138 @@ body {
     width: 300px;
     height: 60px;
   }
+  body {
+    margin: 0px 68px 0px 68px;
+  }
+  .section-aboutme {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    column-gap: 24px;
+    row-gap: 0px;
+    margin-top: 120px;
+  }
+  .section-aboutme .h1-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 105px;
+    color: white;
+  }
+  .section-aboutme .h1-with {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 105px;
+    color: white;
+  }
+  .section-aboutme .h1-global {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 105px;
+    color: white;
+  }
+  .section-aboutme .global {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 105px;
+    color: #ADFF00;
+  }
+  .section-aboutme .h1-focus {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 105px;
+    color: white;
+  }
+  .section-aboutme .p-portada {
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-left: 50px;
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    color: white;
+  }
+  .section-aboutme .container-pill {
+    border: 2px solid white;
+    border-radius: 48px;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    height: 45px;
+    margin: 10px 0px 0px 40px;
+  }
+  .introduccion {
+    margin-top: 220px;
+    column-gap: 30px;
+    font-family: "area-normal", sans-serif;
+    font-weight: none;
+    font-style: normal;
+    font-size: 14px;
+    color: none;
+  }
+  .introduccion .titulo-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 75px;
+    color: #2C2C2C;
+    width: 250px;
+  }
+  .introduccion .contenedor-hello {
+    width: 335px;
+  }
+  .introduccion .hello-aboutme {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 32px;
+    color: #ADFF00;
+    margin-top: 35px;
+  }
+  .technical-skills {
+    margin-top: 120px;
+  }
+  .technical-skills .tech-skills-titulo {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 35px;
+    color: #6e6e6e;
+  }
+  .technical-skills .aptitud {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #6e6e6e;
+    padding: 5px 10px;
+  }
 }
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   .navbar {
     font-family: "area-normal", sans-serif;
     font-weight: 400;
@@ -452,6 +752,83 @@ body {
     width: 220px;
     height: 45px;
     padding-top: 5px;
+  }
+  body {
+    margin: 0px 24px 0px 24px;
+  }
+  .section-aboutme {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 80px);
+    column-gap: 24px;
+    row-gap: 0px;
+    margin-top: 80px;
+  }
+  .section-aboutme .h1-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 62px;
+    color: white;
+  }
+  .section-aboutme .h1-with {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 62px;
+    color: white;
+  }
+  .section-aboutme .h1-global {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 62px;
+    color: white;
+  }
+  .section-aboutme .global {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 62px;
+    color: #ADFF00;
+  }
+  .section-aboutme .h1-focus {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 62px;
+    color: white;
+  }
+  .section-aboutme .p-portada {
+    display: none;
+  }
+  .section-aboutme .container-pill {
+    height: 35px;
+    margin: 0px 0px 0px 20px;
+  }
+  .introduccion {
+    margin-top: 350px;
+  }
+  .introduccion .titulo-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 65px;
+    color: #2C2C2C;
+    width: 100%;
+  }
+  .introduccion .contenedor-hello {
+    width: 100%;
+  }
+  .technical-skills {
+    margin-top: 40px;
+  }
+  .technical-skills .tech-skills-titulo {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 28px;
+    color: #6e6e6e;
   }
 }
 @media (max-width: 390px) {

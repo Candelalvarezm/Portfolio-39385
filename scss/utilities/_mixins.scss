@@ -25,3 +25,17 @@
     grid-row-start: $rowstart;
     grid-row-end: $rowend;
 }
+
+@mixin flex ($display, $flow){
+    display: $display;
+    flex-flow: $flow;
+}
+
+@mixin dimensions ($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin pm ($padding, $margin){
+    padding: $padding;
+    margin: $margin;
+}

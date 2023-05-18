@@ -34,5 +34,69 @@
         }
 
     }
+
+    //about me
+    body{
+        margin: 0px 100px 0px 100px;
+    }
+    
+    .section-aboutme{
+        @include grid (grid, repeat(12,1fr), repeat(3,150px),24px,0px);
+        margin-top:90px;
+        .h1-aboutme{
+            @include text ($font-area, 600, normal, 89px, $body-color);
+        }
+        .h1-with{
+            @include text ($font-area, 600, normal, 89px, $body-color);
+            padding-right: 100px;
+        }
+        .h1-global{
+            @include text ($font-area, 600, normal, 89px, $body-color);
+        }
+        .global{
+            @include text ($font-area, 600, normal, 89px, $color-green);
+        }
+        .h1-focus{ 
+            @include text ($font-area, 600, normal, 89px, $body-color);
+        }
+        .p-portada{
+            @include text ($font-area, 200, normal, 15px, $body-color);
+            padding-top: 0px;
+        }
+        .container-pill{
+            height: 50px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .introduccion{
+        margin-top: 130px;
+        column-gap: 100px;
+        @include text ($font-area, none,normal,15px,none);
+        .titulo-aboutme{
+            @include text ($font-area, 800,normal,89px,$dark-gray);
+            width: 320px;
+        }
+        .contenedor-hello{
+            width: 370px;
+        }
+        .hello-aboutme{
+            margin-top: 40px;
+        }
+    }
+    
+    .technical-skills{
+        margin-top: 100px;
+        .tech-skills-titulo{
+            @include text ($font-space, 200,normal,35px,$light-gray); 
+        }
+        .pastillas-skills{
+            gap: 10px;
+        }
+        .aptitud{
+            @include text ($font-space, 400,normal,16px,$light-gray);
+            padding: 10px 20px;
+        }
+    }
 }
 

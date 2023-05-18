@@ -6,7 +6,7 @@ body{
 
 .section-aboutme{
     @include grid (grid, repeat(12,1fr), repeat(3,170px),24px,0px);
-    margin-top:120px;
+    margin-top:140px;
     .h1-aboutme{
         @include gridposition (1,13,1,1);
         @include text ($font-area, 600, normal, 130px, $body-color);
@@ -41,6 +41,46 @@ body{
         align-self: center;
     }
 }
+
+.introduccion{
+    @include flex (flex, row wrap);
+    margin-top: 240px;
+    column-gap: 180px;
+    @include text ($font-area, none,normal,20px,none);
+    .titulo-aboutme{
+        @include text ($font-area, 800,normal,120px,$dark-gray);
+        width: 410px;
+    }
+    .contenedor-hello{
+        width: 580px;
+    }
+    .hello-aboutme{
+        @include text ($font-space, 200,normal,48px,$color-green);
+        margin-top: 60px;
+    }
+    
+
+}
+
+.technical-skills{
+    margin-top: 120px;
+    .tech-skills-titulo{
+        @include text ($font-space, 200,normal,43px,$light-gray); 
+    }
+    .pastillas-skills{
+        @include flex (flex, row wrap);
+        gap: 16px;
+    }
+    .aptitud{
+        @include text ($font-space, 400,normal,20px,$light-gray);
+        list-style: none;
+        @include border (1px,solid,$light-gray,48px);
+        padding: 15px 30px;
+    }
+}
+
+
+
 
 
 

@@ -1,0 +1,4 @@
+footer{
+    margin: 60px 0px;
+    @include text ($font-space, none, normal, 20px, $dark-gray)
+}

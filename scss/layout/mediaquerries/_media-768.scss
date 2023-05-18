@@ -34,4 +34,73 @@
         }
 
     }
+
+    //about me
+    body{
+        margin: 0px 68px 0px 68px;
+    }
+    
+    .section-aboutme{
+        @include grid (grid, repeat(12,1fr), repeat(4,150px),24px,0px);
+
+        margin-top:120px;
+        .h1-aboutme{
+            @include text ($font-area, 600, normal, 105px, $body-color);
+        }
+        .h1-with{
+            @include gridposition (1,7,2,2);
+            @include text ($font-area, 600, normal, 105px, $body-color);
+        }
+        .h1-global{
+            @include gridposition (1,9,3,3);
+            @include text ($font-area, 600, normal, 105px, $body-color);
+        }
+        .global{
+            @include gridposition (3,9,3,3);
+            @include text ($font-area, 600, normal, 105px, $color-green);
+        }
+        .h1-focus{
+            @include gridposition (1,13,4,4);
+            @include text ($font-area, 600, normal, 105px, $body-color);
+        }
+        .p-portada{
+            @include gridposition (6,13,2,2);
+            margin-left: 50px;
+            @include text ($font-area, 200, normal, 14px, $body-color);
+        }
+        .container-pill{
+            @include border (2px, solid, $body-color, 48px);
+            @include gridposition (8,13,4,4);
+            height: 45px;
+            margin: 10px 0px 0px 40px;
+        }
+    }
+    
+    .introduccion{
+        margin-top: 220px;
+        column-gap: 30px;
+        @include text ($font-area, none,normal,14px,none);
+        .titulo-aboutme{
+            @include text ($font-area, 800,normal,75px,$dark-gray);
+            width: 250px;
+        }
+        .contenedor-hello{
+            width: 335px;
+        }
+        .hello-aboutme{
+            @include text ($font-space, 200,normal,32px,$color-green);
+            margin-top: 35px;
+        }
+    }
+    
+    .technical-skills{
+        margin-top: 120px;
+        .tech-skills-titulo{
+            @include text ($font-space, 200,normal,35px,$light-gray); 
+        }
+        .aptitud{
+            @include text ($font-space, 400,normal,14px,$light-gray);
+            padding: 5px 10px;
+        }
+    }
 }
