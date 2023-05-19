@@ -1,4 +1,4 @@
-//max-width 768px
+//index
 @media (max-width:768px){
     .body-home{
         margin: 0px 80px 0px 80px;
@@ -103,4 +103,101 @@
             padding: 5px 10px;
         }
     }
+
+
+//works
+.titulos-works{
+    h3{
+        @include text ($font-space, 200, normal,55px,$body-color);
+    } 
+    .works-bajada{
+        @include text ($font-area, none, normal,18px,$light-gray);
+}
+}
+
+.works{
+    column-gap: 24px;
+    .works-card{
+        @include dimensions (304px,320px);
+        .imagen-card{
+            @include dimensions(304px,210px);
+        }
+        .descripcion-proyectos{
+            @include text ($font-area,400,normal,14px,$light-gray);
+        }
+        .titulo-proyecto{
+            margin-top: 10px;
+            @include text ($font-area,200,normal,18px,$body-color);
+        }
+    }
+}
+
+//services
+.services{
+    h3{
+        margin-top: 48px;
+        @include text ($font-space, 200, normal,48px,$body-color);
+    } 
+    .areas-diseno{
+        .areas{
+            @include pm (10px 40px, 30px 0px 0px 0px);
+        }
+    }
+}
+
+//contact
+.portada-contacto{
+    margin-top: 220px;
+    .titulo-contact{
+        @include text($font-area,600,normal,120px,$body-color);
+    }
+    .titulo-contact-color{
+        @include text($font-area,600,normal,120px,$color-green);
+        @include gridposition(1,13,3,3);
+    }
+    .pill-contacto{
+        display: none;
+    }
+}
+
+.info-contacto{
+    column-gap: 24px;
+    margin-top: 250px;
+    h3{
+    @include text ($font-space, 200, normal,55px,$body-color);
+    }
+    .contacto{
+        .formulario{
+            width: 100%;
+            .formulario-contacto{
+                width: 100%;
+                .primera-linea{
+                    .nombre{
+                        width: 304px;
+                    }
+                    .mail{
+                        margin-left: 16px;
+                        width: 304px;
+                    }
+                }
+                .sujeto{
+                    width: 100%;
+                }
+                .message{
+                    @include dimensions(100%,158px);
+                }
+                .button{
+                    @include text ($font-area, 200, normal,20px,$light-gray);
+                    @include pm(16px 30px,0px 0px 0px 520px);
+                }
+            }
+        }
+    }
+}
+
+.contacto-redes{
+    @include text ($font-area, 200, normal,18px,$light-gray);
+    @include pm(0px,40px 0px 0px 0px);
+    margin-left: 0px;
+}
 }

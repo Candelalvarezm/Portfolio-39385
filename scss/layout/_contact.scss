@@ -1,0 +1,91 @@
+.portada-contacto{
+    margin-top: 120px;
+    @include grid(grid,repeat(12,1fr),repeat(3,200px),24px,none);
+    .titulo-contact{
+        @include text($font-area,600,normal,185px,$body-color);
+        @include gridposition(1,13,1,1);
+    }
+    .titulo-contact-color{
+        @include text($font-area,600,normal,185px,$color-green);
+
+    }
+    .pill-contacto{
+        @include border(2px, solid, $body-color,48px);
+        @include pm(none,0px 0px 0px 40px);
+        height: 56px;
+        @include gridposition(8,13,2,2);
+        margin-top: 120px;
+    }
+}
+
+.info-contacto{
+    margin-top: 200px;
+    h3{
+    @include text ($font-space, 200, normal,64px,$body-color);
+    }
+    .contacto{
+        margin-top: 24px;
+        @include flex (flex, row wrap);
+        .formulario{
+            width: 590px;
+            @include text ($font-area, 200, normal,24px,$light-gray);
+            .formulario-contacto{
+                @include text ($font-area, 200, normal,24px,$light-gray);
+                .primera-linea{
+                    @include flex (flex, row wrap);
+                    .nombre{
+                        width: 271px;
+                    }
+                    .mail{
+                        margin-left: 22px;
+                        width: 294px;
+                    }
+                }
+                .sujeto{
+                    width: 588px;
+                }
+                .message{
+                    @include dimensions(588px,158px);
+                }
+                .button{
+                    background-color: transparent;
+                    @include text ($font-area, 200, normal,24px,$light-gray);
+                    @include border(1px,solid,$body-color,48px);
+                    @include pm(16px 30px,0px 0px 0px 475px);
+
+                }
+            }
+        }
+    }
+}
+
+input{
+    @include text ($font-area, 200, normal,24px,$light-gray);
+    @include border (1px, solid, $body-color, 48px);
+    background-color: transparent;
+    @include pm(16px,0px 0px 16px 0px)
+}
+
+.contacto-redes{
+    @include flex (flex, column);
+    @include text ($font-area, 200, normal,24px,$light-gray);
+    margin-left: 112px;
+
+    .redes-ubicacion{
+        @include flex (flex, row);
+        column-gap: 16px;
+        .redes{
+            @include dimensions(32px,32px);
+        }
+    }
+}
+
+
+
+
+// @mixin text ($font, $weight, $style, $size, $color)
+// //@mixin grid ($grid,$column, $row, $cgap, $rgap)
+// //@mixin gridposition ($colstart, $colend, $rowstart, $rowend)
+// //@mixin border ($thickness, $style, $color, $radius)
+// //@mixin flex ($display, $flow)
+// // @include dimensions()

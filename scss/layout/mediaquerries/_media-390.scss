@@ -19,4 +19,59 @@
             width: 200px;
         }
     }
+
+    //about me
+    .section-aboutme{
+        .h1-aboutme{
+            @include text ($font-area, 600, normal, 56px, $body-color);
+        }
+        .h1-with{
+            @include text ($font-area, 600, normal, 56px, $body-color);
+        }
+        .h1-global{
+            @include text ($font-area, 600, normal, 56px, $body-color);
+        }
+        .global{
+            @include text ($font-area, 600, normal, 56px, $color-green);
+        }
+        .h1-focus{
+            @include text ($font-area, 600, normal, 56px, $body-color);
+        }
+    }
+    
+    .introduccion{
+        margin-top: 300px;
+        .titulo-aboutme{
+            @include text ($font-area, 800,normal,56px,$dark-gray);
+            
+        }
+        .contenedor-hello{
+            width: 100%;
+        }
+        
+    }
+
+    //contacto
+    .portada-contacto{
+        .titulo-contact{
+            @include text($font-area,600,normal,90px,$body-color);
+        }
+        .titulo-contact-color{
+            @include text($font-area,600,normal,90px,$color-green);        }
+    }
+    .info-contacto{
+        h3{
+        @include text ($font-space, 200, normal,45px,$body-color);
+        }
+        .contacto{
+            .formulario{
+                .formulario-contacto{
+                    .button{
+                        @include text ($font-area, 200, normal,16px,$light-gray);
+                        @include pm(5px 30px,0px 0px 0px 230px);
+                    }
+                }
+            }
+        }
+    }
 }

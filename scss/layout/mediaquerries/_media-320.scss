@@ -19,4 +19,124 @@
             height: 40px;
         }
     }
+
+        //about me
+        .section-aboutme{
+            .h1-aboutme{
+                @include text ($font-area, 600, normal, 45px, $body-color);
+            }
+            .h1-with{
+                @include text ($font-area, 600, normal, 45px, $body-color);
+            }
+            .h1-global{
+                @include text ($font-area, 600, normal, 45px, $body-color);
+            }
+            .global{
+                @include text ($font-area, 600, normal, 45px, $color-green);
+            }
+            .h1-focus{
+                @include text ($font-area, 600, normal, 45px, $body-color);
+            }
+            .container-pill{
+                align-self: flex-start;
+                margin: 15px 0px 0px 10px;
+            }
+        }
+        
+        .introduccion{
+            margin-top: 300px;
+            .titulo-aboutme{
+                @include text ($font-area, 800,normal,45px,$dark-gray);
+                
+            }
+        }
+
+        .technical-skills{
+            margin-top: 40px;
+            .tech-skills-titulo{
+                @include text ($font-space, 200,normal,28px,$light-gray); 
+            }
+            .pastillas-skills{
+                gap: 4spx;
+            }
+            .aptitud{
+                @include text ($font-space, 400,normal,14px,$light-gray);
+                padding: 5px 10px;
+            }
+        }
+
+            //works
+.titulos-works{
+    h3{
+        @include text ($font-space, 200, normal,36px,$body-color);
+    } 
+}
+.works{
+    margin-top: 32px;
+}
+
+//services
+.services{
+    h3{
+        @include text ($font-space, 200, normal,36px,$body-color);
+    } 
+    .areas-diseno{
+        @include pm (0px, 24px 0px 0px 0px);
+
+        .areas{
+            @include text ($font-space, 200, normal,22px,$color-green);
+            @include pm (5px 30px, 12px 0px 0px 0px);
+        }
+    }
+}
+//contacto
+.portada-contacto{
+    margin-top: 0px;
+    .titulo-contact{
+        @include text($font-area,600,normal,70px,$body-color);
+    }
+    .titulo-contact-color{
+        @include text($font-area,600,normal,70px,$color-green);        }
+}
+.info-contacto{
+    margin-top: 40px;
+    h3{
+    @include text ($font-space, 200, normal,36px,$body-color);
+    }
+    .contacto{
+        .formulario{
+            .formulario-contacto{
+                .nombre{
+                    @include pm(10px 30px,0px 0px 10px 0px);
+                }
+                .mail{
+                    @include pm(10px 30px,0px 0px 10px 0px);
+                }
+                .sujeto{
+                    @include pm(10px 30px,0px 0px 10px 0px);
+
+                }
+                .message{
+                    @include pm(10px 30px,0px 0px 10px 0px);
+
+                }
+                
+                .button{
+                    @include pm(5px 30px,0px 0px 0px 170px);
+                }
+            }
+        }
+    }
+}
+
+.contacto-redes{
+    @include text ($font-area, 200, normal,16px,$light-gray);
+
+    .redes-ubicacion{
+        column-gap: 8px;
+        .redes{
+            @include dimensions(24px,24px);
+        }
+    }
+}
 }

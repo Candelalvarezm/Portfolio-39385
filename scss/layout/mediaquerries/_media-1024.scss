@@ -98,5 +98,76 @@
             padding: 10px 20px;
         }
     }
+
+    //works
+    .works{
+        column-gap: 48px;
+        .works-card{
+            @include dimensions (388px,368px);
+        }
+    }
+
+    //contact
+    .portada-contacto{
+        margin-top: 140px;
+        @include grid(grid,repeat(12,1fr),repeat(3,150px),24px,none);
+        .titulo-contact{
+            @include text($font-area,600,normal,120px,$body-color);
+        }
+        .titulo-contact-color{
+            @include text($font-area,600,normal,120px,$color-green);
+            @include gridposition(1,8,2,2)
+    
+        }
+        .pill-contacto{
+            @include pm(none,50px 0px 0px 0px);
+            @include gridposition(8,13,2,2)
+        }
+    }
+    
+    .info-contacto{
+        column-gap: 24px;
+        margin-top: 150px;
+        h3{
+        @include text ($font-space, 200, normal,64px,$body-color);
+        }
+        .contacto{
+            .formulario{
+                width: 396px;
+                .formulario-contacto{
+                    .primera-linea{
+                        @include flex (flex, row wrap);
+                        .nombre{
+                            @include text ($font-area, 200, normal,20px,$light-gray);
+                            width: 187px;
+                        }
+                        .mail{
+                            @include text ($font-area, 200, normal,20px,$light-gray);
+                            margin-left: 16px;
+                            width: 193px;
+                        }
+                    }
+                    .sujeto{
+                        @include text ($font-area, 200, normal,20px,$light-gray);
+                        width: 396px;
+                    }
+                    .message{
+                        @include text ($font-area, 200, normal,20px,$light-gray);
+                        @include dimensions(396px,158px);
+                    }
+                    .button{
+                        @include text ($font-area, 200, normal,20px,$light-gray);
+                        @include pm(16px 30px,0px 0px 0px 285px);
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+    .contacto-redes{
+        @include text ($font-area, 200, normal,18px,$light-gray);
+    }
 }
 

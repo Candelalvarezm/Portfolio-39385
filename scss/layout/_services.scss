@@ -1,0 +1,22 @@
+.services{
+    h3{
+        margin-top: 48px;
+        @include text ($font-space, 200, normal,64px,$body-color);
+    } 
+    .areas-diseno{
+        list-style: none;
+        .areas{
+            @include text ($font-space, 200, normal,40px,$color-green);
+            @include border (1px, solid, $body-color,48px);
+            @include pm (10px 40px, 24px 0px 0px 0px);
+            &:hover{
+                background-color: $light-hover;
+            }
+        }
+    }
+
+}
+
+
+
+

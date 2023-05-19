@@ -31,14 +31,14 @@
     background-position: cover;
     margin: 0px 120px 0px 120px
 } */
-/* 
+/*
 .section-principal{
     display: grid;
     grid-template-columns: repeat(12, 1fr) ;
     grid-template-rows: 128px 128px 128px;
     column-gap: 24px;
     margin-top: 235px;
-    font-weight: 100;  
+    font-weight: 100;
 }
 
 .h1-home-nombre{
@@ -47,7 +47,7 @@
     font-weight: 600;
     font-size: 105px;
     line-height: 120px;"area-normal", sans-serif;
-    font-family: 
+    font-family:
     font-style: normal;
     font-weight: 600;
 }
@@ -200,7 +200,7 @@ span{
     font-size: 120px;
     color: #2C2C2C;
     line-height: 120px;
-    font-weight: 800; 
+    font-weight: 800;
 }
 
 .introduccion{
@@ -228,7 +228,7 @@ span{
     margin-top: 120px;
     font-size: 20px;
     font-weight: 400;
-    
+
 } */
 
 /* .tech-skills-titulo{
@@ -238,7 +238,7 @@ span{
     font-size: 43px;
     font-weight: 200;
 } */
-/* 
+/*
 .pastillas-skills{
     display: flex;
     flex-flow: row wrap;
@@ -257,11 +257,11 @@ footer{
     color: #2C2C2C;
     font-family:'Space Grotesk', sans-serif ;
     font-size: 20px;
-    
+
 } */
 
 /*works original*/
-h3{
+/* h3{
     margin-top: 48px;
     color: white;
     font-family:'Space Grotesk', sans-serif ;
@@ -272,9 +272,9 @@ h3{
 .works-bajada{
     color: #6E6E6E;
     font-size: 20px;
-}
+} */
 
-.works{
+/* .works{
     margin-top: 40px;
     display: flex;
     flex-flow: row wrap;
@@ -282,7 +282,7 @@ h3{
     row-gap: 48px;
 }
 
-.works-card{ 
+.works-card{
     width: 379px;
     border: 24px;
     height: 368px;
@@ -307,11 +307,11 @@ h3{
     font-size: 20px;
     margin-top: 8px;
     font-weight: 200;
-}
+} */
 
 /*services original*/
-.areas-diseno{
-    list-style: none; 
+/* .areas-diseno{
+    list-style: none;
     color: #ADFF00;
     padding-left: 0px;
 }
@@ -330,11 +330,11 @@ h3{
 .services{
     font-family:'Space Grotesk', sans-serif ;
     font-size: 48px;
-}
+} */
 
 /* contact original*/
 
-.portada-contacto{
+/* .portada-contacto{
     margin-top: 120px;
     display: grid;
     grid-template-columns: repeat(12, 1fr) ;
@@ -346,7 +346,7 @@ h3{
     font-size: 160px;
     line-height: 220px;
     grid-column: 1/13;
-    
+
 }
 
 .pill-contacto{
@@ -374,7 +374,7 @@ h3{
     width: 590px;
     font-size: 24px;
     color: #6E6E6E;
-    
+
 }
 .info-contacto{
     margin-top: 200px;
@@ -383,7 +383,7 @@ h3{
 .formulario-contacto{
     font-family: "area-normal", sans-serif;
     font-style: normal;
-    
+
 }
 
 .primera-linea{
@@ -407,7 +407,7 @@ h3{
     width: 588px;
     height: 158px;
     grid-area: mensaje;
-    
+
 }
 
 input{
@@ -431,9 +431,9 @@ input{
     border-radius: 48px;
     padding:16px;
     margin-left: 495px;
-}
+} */
 
-.contacto-redes{
+/* .contacto-redes{
     font-size: 24px;
     display: flex;
     flex-flow: column;
@@ -450,7 +450,7 @@ input{
     display: flex;
     flex-flow: row;
     column-gap: 16px;
-}
+} */
 
 /*responsive*/
 /*Laptop s*/
@@ -462,7 +462,7 @@ input{
     .section-principal{
         margin-top: 150px;
         grid-template-columns: repeat(12, 1fr) ;
-        grid-template-rows: 115px 115px 115px; 
+        grid-template-rows: 115px 115px 115px;
     }
     .h1-home-nombre{
         grid-row: 1/1;
@@ -485,7 +485,7 @@ input{
         grid-column: 6/13;
         font-size: 54px;
         margin-left: 0px;
-        
+
     }
     .p-instagram{
         grid-row: 3/3;
@@ -493,7 +493,7 @@ input{
         height: 60px;
         font-size: 22px;
         padding-top: 5px;;
-        
+
     }
     .p-ubicacion{
         grid-row: 1/1;
@@ -517,7 +517,7 @@ input{
         font-size: 89px;
     }
     .h1-with{
-        font-size: 89px;  
+        font-size: 89px;
     }
     .h1-global{
         font-size: 89px;
@@ -526,7 +526,7 @@ input{
         font-size: 89px;
     }
     .h1-focus{
-        font-size: 89px;    
+        font-size: 89px;
     /* } */
     /* .p-portada{
         padding-top: 40px;
@@ -545,7 +545,7 @@ input{
     .titulo-aboutme{
         width: 320px;
         font-size: 89px;
-        
+
     }
     .contenedor-hello{
         width: 400px;
@@ -554,7 +554,7 @@ input{
         margin-top: 100px;
         font-size: 20px;
         font-weight: 400;
-        
+
     }
     .tech-skills-titulo{
         font-size: 35px;
@@ -574,13 +574,13 @@ input{
     } */
 
 /*works laptop s*/
-    .works{
+    /* .works{
         column-gap: 48px;
     }
-    .works-card{ 
+    .works-card{
         width: 388px;
     }
-}
+} */
 
 c
 
@@ -589,7 +589,7 @@ c
         margin: 0px;
     }
     body{
-        margin: 0px 68px 0px 68px; 
+        margin: 0px 68px 0px 68px;
     }
     .section-aboutme{
         grid-template-rows: 150px 150px 150px 150px;
@@ -616,13 +616,13 @@ c
         grid-row: 3/3;
     }
     .h1-focus{
-        font-size: 105px; 
+        font-size: 105px;
         grid-column: 1/13;
         grid-row: 4/4;
     } */
     /* .p-portada{
         margin-left: 50px;
-        grid-column: 6/13; 
+        grid-column: 6/13;
     }
     .container-pill{
         margin: 10px 0px 0px 40px;
@@ -638,7 +638,7 @@ c
     .titulo-aboutme{
         width: 250px;
         font-size: 75px;
-        line-height: 80px;   
+        line-height: 80px;
     }
     .contenedor-hello{
         width: 350px;
@@ -663,7 +663,7 @@ c
     } */
 
 /*works tablet*/
-    h3{
+    /* h3{
     font-size: 55px;
     }
     .works-bajada{
@@ -673,7 +673,7 @@ c
         column-gap: 24px;
         row-gap: 48px;
     }
-    .works-card{ 
+    .works-card{
         width: 304px;
         border: 24px;
         height: 320px;
@@ -688,15 +688,15 @@ c
     .titulo-proyecto{
         font-size: 20px;
         margin-top: 10px;
-    }
+    } */
 
 /*services tablet*/
-.areas{
+/* .areas{
     margin-top: 20px;
 }
 .services{
     font-size: 40px;
-}
+} */
 
 
 /*mobile 425*/
@@ -707,10 +707,10 @@ c
     }
     .body-home{
         margin:0px 24px 0px 24px}
-        
+
     .section-principal{
         margin-top: 80px;
-        grid-template-rows: 90px 90px 110px 55px 80px; 
+        grid-template-rows: 90px 90px 110px 55px 80px;
     }
     .h1-home-nombre{
         font-size:70px;
@@ -764,7 +764,7 @@ c
         margin: 0px 0px 0px 20px;
         height: 35px;
     } */
-    .introduccion{
+    /* .introduccion{
         margin-top: 320px;
         font-size: 14px;
     }
@@ -774,10 +774,10 @@ c
     }
     .contenedor-hello{
         margin-top: 30px;
-    }
+    } */
 
     /*works mobile 425*/
-    h3{
+    /* h3{
         font-size: 45px;
     }
     .works-bajada{
@@ -786,7 +786,7 @@ c
     .works{
         row-gap: 24px;
     }
-    .works-card{ 
+    .works-card{
         width: 100%;
         border: 24px;
         height: 320px;
@@ -794,23 +794,23 @@ c
     .imagen-card{
         width:100%;
         height: 210px;
-    }
+    } */
 
     /*services mobile 425*/
-    .areas{
+    /* .areas{
         padding: 10px 40px;
         margin-top: 18px;
     }
     .services{
         font-size: 32px;
     }
-    }
+    } */
 
 /*mobile 390 (mi celular)*/
 @media (max-width:390px){
-    /*index mobile 390*    
+    /*index mobile 390*
     .section-principal{
-        grid-template-rows: 80px 80px 110px 45px 80px; 
+        grid-template-rows: 80px 80px 110px 45px 80px;
     }
     .h1-home-nombre{
         font-size: 60px;
@@ -831,7 +831,7 @@ c
     }*/
 
     /* about me mobile 390*/
-    .h1-aboutme{
+    /* .h1-aboutme{
         font-size: 56px;
     }
     .h1-with{
@@ -857,15 +857,15 @@ c
     }
     .tech-skills-titulo{
         font-size: 28px;
-    }
+    } */
 }
 
 /*mobile 320*/
 @media (max-width:320px){
-    /*index mobile 320* 
+    /*index mobile 320*
     .section-principal{
         margin-top: 0px;
-        grid-template-rows: 65px 65px 100px 45px 75px; 
+        grid-template-rows: 65px 65px 100px 45px 75px;
     }
     .h1-home-nombre{
         font-size: 50px;
@@ -884,7 +884,7 @@ c
     }*/
 
     /* about me mobile 320*/
-    .h1-aboutme{
+    /* .h1-aboutme{
         font-size: 45px;
     }
     .h1-with{
@@ -901,25 +901,25 @@ c
     }
     .container-pill{
         align-self: flex-start;
-        margin: 15px 0px 0px 10px;   
+        margin: 15px 0px 0px 10px;
     }
     .titulo-aboutme{
         font-size: 45px;
     }
     .contenedor-hello{
         margin-top: 20px;
-    }
+    } */
 
 /*works mobile 320*/
-    h3{
+    /* h3{
         font-size: 36px;
-    }   
+    } */
 
 /*services mobile 320*/
-.areas{
+/* .areas{
     margin-top: 12px;
 }
 .services{
     font-size: 23px;
 }
-}
+}} */

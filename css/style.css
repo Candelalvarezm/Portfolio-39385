@@ -298,6 +298,216 @@ body {
   padding: 15px 30px;
 }
 
+.titulos-works h3 {
+  margin-top: 48px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 64px;
+  color: white;
+}
+.titulos-works .works-bajada {
+  font-family: "area-normal", sans-serif;
+  font-weight: none;
+  font-style: normal;
+  font-size: 20px;
+  color: #6e6e6e;
+}
+
+.works {
+  margin-top: 48px;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.works .works-card {
+  width: 379px;
+  height: 368px;
+  display: flex;
+  flex-flow: column;
+  border: 24px;
+}
+.works .works-card .imagen-card {
+  border-radius: 40px;
+  width: 382px;
+  height: 266px;
+}
+.works .works-card .descripcion-proyectos {
+  font-family: "area-normal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #6e6e6e;
+}
+.works .works-card .titulo-proyecto {
+  margin-top: 8px;
+  font-family: "area-normal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+}
+
+.services h3 {
+  margin-top: 48px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 64px;
+  color: white;
+}
+.services .areas-diseno {
+  list-style: none;
+}
+.services .areas-diseno .areas {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 40px;
+  color: #ADFF00;
+  border: 1px solid white;
+  border-radius: 48px;
+  padding: 10px 40px;
+  margin: 24px 0px 0px 0px;
+}
+.services .areas-diseno .areas:hover {
+  background-color: rgba(255, 255, 255, 0.1529411765);
+}
+
+.portada-contacto {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  column-gap: 24px;
+  row-gap: none;
+}
+.portada-contacto .titulo-contact {
+  font-family: "area-normal", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 185px;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.portada-contacto .titulo-contact-color {
+  font-family: "area-normal", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 185px;
+  color: #ADFF00;
+}
+.portada-contacto .pill-contacto {
+  border: 2px solid white;
+  border-radius: 48px;
+  padding: none;
+  margin: 0px 0px 0px 40px;
+  height: 56px;
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  margin-top: 120px;
+}
+
+.info-contacto {
+  margin-top: 200px;
+}
+.info-contacto h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 64px;
+  color: white;
+}
+.info-contacto .contacto {
+  margin-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.info-contacto .contacto .formulario {
+  width: 590px;
+  font-family: "area-normal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  color: #6e6e6e;
+}
+.info-contacto .contacto .formulario .formulario-contacto {
+  font-family: "area-normal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  color: #6e6e6e;
+}
+.info-contacto .contacto .formulario .formulario-contacto .primera-linea {
+  display: flex;
+  flex-flow: row wrap;
+}
+.info-contacto .contacto .formulario .formulario-contacto .primera-linea .nombre {
+  width: 271px;
+}
+.info-contacto .contacto .formulario .formulario-contacto .primera-linea .mail {
+  margin-left: 22px;
+  width: 294px;
+}
+.info-contacto .contacto .formulario .formulario-contacto .sujeto {
+  width: 588px;
+}
+.info-contacto .contacto .formulario .formulario-contacto .message {
+  width: 588px;
+  height: 158px;
+}
+.info-contacto .contacto .formulario .formulario-contacto .button {
+  background-color: transparent;
+  font-family: "area-normal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  color: #6e6e6e;
+  border: 1px solid white;
+  border-radius: 48px;
+  padding: 16px 30px;
+  margin: 0px 0px 0px 475px;
+}
+
+input {
+  font-family: "area-normal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  color: #6e6e6e;
+  border: 1px solid white;
+  border-radius: 48px;
+  background-color: transparent;
+  padding: 16px;
+  margin: 0px 0px 16px 0px;
+}
+
+.contacto-redes {
+  display: flex;
+  flex-flow: column;
+  font-family: "area-normal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+  color: #6e6e6e;
+  margin-left: 112px;
+}
+.contacto-redes .redes-ubicacion {
+  display: flex;
+  flex-flow: row;
+  column-gap: 16px;
+}
+.contacto-redes .redes-ubicacion .redes {
+  width: 32px;
+  height: 32px;
+}
+
 footer {
   margin: 60px 0px;
   font-family: "Space Grotesk", sans-serif;
@@ -489,6 +699,115 @@ footer {
     font-size: 16px;
     color: #6e6e6e;
     padding: 10px 20px;
+  }
+  .works {
+    column-gap: 48px;
+  }
+  .works .works-card {
+    width: 388px;
+    height: 368px;
+  }
+  .portada-contacto {
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    column-gap: 24px;
+    row-gap: none;
+  }
+  .portada-contacto .titulo-contact {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 120px;
+    color: white;
+  }
+  .portada-contacto .titulo-contact-color {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 120px;
+    color: #ADFF00;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .portada-contacto .pill-contacto {
+    padding: none;
+    margin: 50px 0px 0px 0px;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .info-contacto {
+    column-gap: 24px;
+    margin-top: 150px;
+  }
+  .info-contacto h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 64px;
+    color: white;
+  }
+  .info-contacto .contacto .formulario {
+    width: 396px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .primera-linea {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .primera-linea .nombre {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: #6e6e6e;
+    width: 187px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .primera-linea .mail {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: #6e6e6e;
+    margin-left: 16px;
+    width: 193px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .sujeto {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: #6e6e6e;
+    width: 396px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .message {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: #6e6e6e;
+    width: 396px;
+    height: 158px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .button {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: #6e6e6e;
+    padding: 16px 30px;
+    margin: 0px 0px 0px 285px;
+  }
+  .contacto-redes {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #6e6e6e;
   }
 }
 @media (max-width: 768px) {
@@ -694,6 +1013,132 @@ footer {
     color: #6e6e6e;
     padding: 5px 10px;
   }
+  .titulos-works h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 55px;
+    color: white;
+  }
+  .titulos-works .works-bajada {
+    font-family: "area-normal", sans-serif;
+    font-weight: none;
+    font-style: normal;
+    font-size: 18px;
+    color: #6e6e6e;
+  }
+  .works {
+    column-gap: 24px;
+  }
+  .works .works-card {
+    width: 304px;
+    height: 320px;
+  }
+  .works .works-card .imagen-card {
+    width: 304px;
+    height: 210px;
+  }
+  .works .works-card .descripcion-proyectos {
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #6e6e6e;
+  }
+  .works .works-card .titulo-proyecto {
+    margin-top: 10px;
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+  }
+  .services h3 {
+    margin-top: 48px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 48px;
+    color: white;
+  }
+  .services .areas-diseno .areas {
+    padding: 10px 40px;
+    margin: 30px 0px 0px 0px;
+  }
+  .portada-contacto {
+    margin-top: 220px;
+  }
+  .portada-contacto .titulo-contact {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 120px;
+    color: white;
+  }
+  .portada-contacto .titulo-contact-color {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 120px;
+    color: #ADFF00;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  .portada-contacto .pill-contacto {
+    display: none;
+  }
+  .info-contacto {
+    column-gap: 24px;
+    margin-top: 250px;
+  }
+  .info-contacto h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 55px;
+    color: white;
+  }
+  .info-contacto .contacto .formulario {
+    width: 100%;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto {
+    width: 100%;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .primera-linea .nombre {
+    width: 304px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .primera-linea .mail {
+    margin-left: 16px;
+    width: 304px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .sujeto {
+    width: 100%;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .message {
+    width: 100%;
+    height: 158px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .button {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    color: #6e6e6e;
+    padding: 16px 30px;
+    margin: 0px 0px 0px 520px;
+  }
+  .contacto-redes {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #6e6e6e;
+    padding: 0px;
+    margin: 40px 0px 0px 0px;
+    margin-left: 0px;
+  }
 }
 @media (max-width: 430px) {
   .navbar {
@@ -830,6 +1275,131 @@ footer {
     font-size: 28px;
     color: #6e6e6e;
   }
+  .titulos-works h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 45px;
+    color: white;
+  }
+  .works {
+    row-gap: 24px;
+  }
+  .works .works-card {
+    width: 100%;
+  }
+  .works .works-card .imagen-card {
+    width: 100%;
+    height: 210px;
+  }
+  .works .works-card .descripcion-proyectos {
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #6e6e6e;
+  }
+  .works .works-card .titulo-proyecto {
+    margin-top: 10px;
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+  }
+  .services h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 45px;
+    color: white;
+  }
+  .services .areas-diseno .areas {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 28px;
+    color: #ADFF00;
+    padding: 10px 40px;
+    margin: 18px 0px 0px 0px;
+  }
+  .portada-contacto {
+    margin-top: 80px;
+  }
+  .portada-contacto .titulo-contact {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+  }
+  .portada-contacto .titulo-contact-color {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
+    color: #ADFF00;
+  }
+  .info-contacto h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 45px;
+    color: white;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .primera-linea .nombre {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: #6e6e6e;
+    width: 100%;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .primera-linea .mail {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: #6e6e6e;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .sujeto {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: #6e6e6e;
+    width: 100%;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .message {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: #6e6e6e;
+    width: 100%;
+    height: 158px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .button {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: #6e6e6e;
+    padding: 5px 30px;
+    margin: 0px 0px 0px 275px;
+  }
+  .contacto-redes {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    color: #6e6e6e;
+    padding: 0px;
+    margin: 40px 0px 0px 0px;
+    margin-left: 0px;
+  }
 }
 @media (max-width: 390px) {
   .section-principal {
@@ -875,6 +1445,84 @@ footer {
     color: white;
     width: 200px;
   }
+  .section-aboutme .h1-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 56px;
+    color: white;
+  }
+  .section-aboutme .h1-with {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 56px;
+    color: white;
+  }
+  .section-aboutme .h1-global {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 56px;
+    color: white;
+  }
+  .section-aboutme .global {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 56px;
+    color: #ADFF00;
+  }
+  .section-aboutme .h1-focus {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 56px;
+    color: white;
+  }
+  .introduccion {
+    margin-top: 300px;
+  }
+  .introduccion .titulo-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 56px;
+    color: #2C2C2C;
+  }
+  .introduccion .contenedor-hello {
+    width: 100%;
+  }
+  .portada-contacto .titulo-contact {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 90px;
+    color: white;
+  }
+  .portada-contacto .titulo-contact-color {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 90px;
+    color: #ADFF00;
+  }
+  .info-contacto h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 45px;
+    color: white;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .button {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: #6e6e6e;
+    padding: 5px 30px;
+    margin: 0px 0px 0px 230px;
+  }
 }
 @media (max-width: 320px) {
   .section-principal {
@@ -915,6 +1563,167 @@ footer {
   }
   .section-principal .p-ubicacion {
     height: 40px;
+  }
+  .section-aboutme .h1-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    color: white;
+  }
+  .section-aboutme .h1-with {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    color: white;
+  }
+  .section-aboutme .h1-global {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    color: white;
+  }
+  .section-aboutme .global {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    color: #ADFF00;
+  }
+  .section-aboutme .h1-focus {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    color: white;
+  }
+  .section-aboutme .container-pill {
+    align-self: flex-start;
+    margin: 15px 0px 0px 10px;
+  }
+  .introduccion {
+    margin-top: 300px;
+  }
+  .introduccion .titulo-aboutme {
+    font-family: "area-normal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    color: #2C2C2C;
+  }
+  .technical-skills {
+    margin-top: 40px;
+  }
+  .technical-skills .tech-skills-titulo {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 28px;
+    color: #6e6e6e;
+  }
+  .technical-skills .pastillas-skills {
+    gap: 4spx;
+  }
+  .technical-skills .aptitud {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #6e6e6e;
+    padding: 5px 10px;
+  }
+  .titulos-works h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 36px;
+    color: white;
+  }
+  .works {
+    margin-top: 32px;
+  }
+  .services h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 36px;
+    color: white;
+  }
+  .services .areas-diseno {
+    padding: 0px;
+    margin: 24px 0px 0px 0px;
+  }
+  .services .areas-diseno .areas {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 22px;
+    color: #ADFF00;
+    padding: 5px 30px;
+    margin: 12px 0px 0px 0px;
+  }
+  .portada-contacto {
+    margin-top: 0px;
+  }
+  .portada-contacto .titulo-contact {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 70px;
+    color: white;
+  }
+  .portada-contacto .titulo-contact-color {
+    font-family: "area-normal", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 70px;
+    color: #ADFF00;
+  }
+  .info-contacto {
+    margin-top: 40px;
+  }
+  .info-contacto h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 36px;
+    color: white;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .nombre {
+    padding: 10px 30px;
+    margin: 0px 0px 10px 0px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .mail {
+    padding: 10px 30px;
+    margin: 0px 0px 10px 0px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .sujeto {
+    padding: 10px 30px;
+    margin: 0px 0px 10px 0px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .message {
+    padding: 10px 30px;
+    margin: 0px 0px 10px 0px;
+  }
+  .info-contacto .contacto .formulario .formulario-contacto .button {
+    padding: 5px 30px;
+    margin: 0px 0px 0px 170px;
+  }
+  .contacto-redes {
+    font-family: "area-normal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: #6e6e6e;
+  }
+  .contacto-redes .redes-ubicacion {
+    column-gap: 8px;
+  }
+  .contacto-redes .redes-ubicacion .redes {
+    width: 24px;
+    height: 24px;
   }
 }
 
