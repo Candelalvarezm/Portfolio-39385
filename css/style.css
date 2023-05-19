@@ -199,11 +199,27 @@ body {
   grid-column-end: 8;
   grid-row-start: 2;
   grid-row-end: 2;
+  margin-left: 20px;
   font-family: "area-normal", sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 130px;
   color: #ADFF00;
+  animation: global 5s 1;
+}
+@keyframes global {
+  0% {
+    color: #202020;
+  }
+  3% {
+    color: #202020;
+  }
+  50% {
+    color: greenyellow;
+  }
+  100% {
+    color: #ADFF00;
+  }
 }
 .section-aboutme .h1-focus {
   grid-column-start: 1;
@@ -400,6 +416,7 @@ body {
   font-style: normal;
   font-size: 185px;
   color: #ADFF00;
+  animation: global 10s 1;
 }
 .portada-contacto .pill-contacto {
   border: 2px solid white;

@@ -22,8 +22,25 @@ body{
     }
     .global{
         @include gridposition (2,8,2,2);
+        margin-left: 20px;
         @include text ($font-area, 600, normal, 130px, $color-green);
+        animation: global 5s 1 ;
+        
     }
+    @keyframes global {
+        0%{
+            color: $background-principal;
+        }
+        3%{
+            color: $background-principal;
+        }
+        50%{
+            color: greenyellow
+        }
+        100%{
+            color: $color-green
+        }}
+        
     .h1-focus{
         @include gridposition (1,5,3,3);
         @include text ($font-area, 600, normal, 130px, $body-color);
@@ -78,6 +95,9 @@ body{
         padding: 15px 30px;
     }
 }
+
+
+
 
 
 

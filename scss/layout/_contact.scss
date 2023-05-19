@@ -7,6 +7,7 @@
     }
     .titulo-contact-color{
         @include text($font-area,600,normal,185px,$color-green);
+        animation: global 10s 1 ;
 
     }
     .pill-contacto{
