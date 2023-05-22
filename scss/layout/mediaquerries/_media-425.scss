@@ -168,4 +168,8 @@
     @include pm(0px,40px 0px 0px 0px);
     margin-left: 0px;
 }
+
+footer{
+    @include text ($font-space, none, normal, 16px, $light-gray);
+}
 }

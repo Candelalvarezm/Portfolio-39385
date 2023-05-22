@@ -531,7 +531,7 @@ footer {
   font-weight: none;
   font-style: normal;
   font-size: 20px;
-  color: #2C2C2C;
+  color: #6e6e6e;
 }
 
 @media (max-width: 1024px) {
@@ -1416,6 +1416,13 @@ footer {
     padding: 0px;
     margin: 40px 0px 0px 0px;
     margin-left: 0px;
+  }
+  footer {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: none;
+    font-style: normal;
+    font-size: 16px;
+    color: #6e6e6e;
   }
 }
 @media (max-width: 390px) {
